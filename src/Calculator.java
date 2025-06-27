@@ -6,12 +6,11 @@ public class Calculator {
         Scanner scanner = new Scanner(System.in);
 
         System.out.print("계산식을 입력해주세요.(예: 10+20)\n더하기(+), 빼기(-), 곱하기(*), 나누기(/)가 가능합니다.\n계산식: ");
-        String input = scanner.nextLine().replaceAll(" ", ""); // 공백 제거
+        String input = scanner.nextLine().replaceAll(" ", "");
 
         char operator = 0;
         int operatorIndex = -1;
 
-        // 연산자 찾기
         for (int i = 0; i < input.length(); i++) {
             char c = input.charAt(i);
             if (c == '+' || c == '-' || c == '*' || c == '/') {
@@ -26,7 +25,6 @@ public class Calculator {
             return;
         }
 
-        // 숫자 추출
         String left = input.substring(0, operatorIndex);
         String right = input.substring(operatorIndex + 1);
 
