@@ -1,3 +1,4 @@
+//양심고백... ChatGPT의 도움을 조금 받았습니다.
 import java.util.Scanner;
 
 public class Calculator {
